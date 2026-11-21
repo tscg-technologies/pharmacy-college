@@ -1,0 +1,360 @@
+/* ==========================================================================
+   PHARMACY COLLEGE WEBSITE - RESPONSIVE STYLESHEET
+   Mobile-First & Breakpoint Adjustments
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (Max 1199px) */
+@media screen and (max-width: 1199px) {
+  :root {
+    --container-width: 1000px;
+    --section-padding: 70px 0;
+  }
+
+  .hero-title {
+    font-size: 2.75rem;
+  }
+
+  .departments-grid,
+  .faculty-grid,
+  .events-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .admission-timeline {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .admission-timeline::before {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+/* Tablets (Max 991px) */
+@media screen and (max-width: 991px) {
+  :root {
+    --section-padding: 60px 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-desc {
+    margin: 0 auto 30px auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-trust-badges {
+    justify-content: center;
+  }
+
+  .floating-card.card-1 {
+    top: 10px;
+    right: 10px;
+  }
+
+  .floating-card.card-2 {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .features-grid,
+  .labs-grid,
+  .careers-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .departments-grid,
+  .events-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dept-detail-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .dept-detail-row.reversed {
+    direction: ltr;
+  }
+
+  .curriculum-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Mobile Navigation Menu */
+  .mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    background: var(--light-grey);
+    border: 1px solid var(--border-color);
+    color: var(--primary-navy);
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: var(--white);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 24px;
+    gap: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform var(--transition-normal);
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    transform: translateX(0);
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  /* Mobile Dropdown Styling */
+  .nav-item-dropdown {
+    width: 100%;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    min-width: 100%;
+    box-shadow: none;
+    border: 1px solid var(--border-light);
+    background: var(--light-grey);
+    border-radius: var(--radius-sm);
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .dropdown-menu::before {
+    display: none;
+  }
+
+  .nav-item-dropdown.open .dropdown-menu {
+    display: flex;
+  }
+
+  .nav-item-dropdown.open .dropdown-chevron {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-item {
+    padding: 10px 12px;
+  }
+
+  .dropdown-item:hover,
+  .dropdown-item.active {
+    background: var(--white);
+    transform: none;
+  }
+
+  .nav-actions {
+    display: none; /* Relocate or condense into mobile drawer */
+  }
+
+  .nav-menu .mobile-only-actions {
+    display: flex !important;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+/* Smartphones (Max 767px) */
+@media screen and (max-width: 767px) {
+  :root {
+    --section-padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .page-header-title {
+    font-size: 2rem;
+  }
+
+  .page-header-banner {
+    padding: 40px 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .stat-card {
+    padding: 20px 16px;
+  }
+
+  .stat-number {
+    font-size: 2.4rem;
+  }
+
+  .features-grid,
+  .labs-grid,
+  .careers-grid,
+  .testimonials-grid,
+  .departments-grid,
+  .events-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admission-timeline {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .faculty-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+
+  .form-wrapper-box {
+    padding: 24px 18px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .floating-card {
+    display: none; /* Hide floating cards on small screens to prevent clutter */
+  }
+
+  .curriculum-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lightbox-content-box {
+    max-width: 95%;
+  }
+
+  .lightbox-caption-bar {
+    padding: 14px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
+/* Extra Small Devices (Max 480px) */
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.95rem;
+  }
+
+  .section-title {
+    font-size: 1.65rem;
+  }
+
+  .brand-title {
+    font-size: 1.1rem;
+  }
+
+  .brand-icon-box {
+    width: 38px;
+    height: 38px;
+  }
+
+  .btn {
+    padding: 11px 20px;
+    font-size: 0.9rem;
+  }
+
+  .demo-banner-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+  }
+}

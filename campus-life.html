@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Life &amp; Facilities | Pharmacy College Website</title>
+  <meta name="description" content="Explore campus life, library and laboratory facilities, interactive student activity photo gallery, academic events, and student testimonials.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Demo Notice Banner -->
+  <div class="demo-banner-top">
+    <div class="container demo-banner-inner">
+      <div>
+        <span class="demo-banner-badge">Demo Website</span>
+        Illustrative educational demonstration website. Generic academic content only.
+      </div>
+      <div>Helpline (Demo): 0000000000 | Hours: Mon - Sat 9:00 AM - 5:00 PM</div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-link" aria-label="Pharmacy College Home">
+        <div class="brand-icon-box">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 10h16a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-2a4 4 0 0 1 4-4z"/>
+            <path d="M12 4v6"/><path d="M9 7h6"/><path d="M8 20v2"/><path d="M16 20v2"/>
+          </svg>
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-title">PHARMACY COLLEGE</span>
+          <span class="brand-subtitle">Pharmaceutical Education Demo</span>
+        </div>
+      </a>
+
+            <!-- Desktop & Mobile Nav Menu (Clean 4-Item Architecture with Dropdowns) -->
+      <nav class="nav-menu" id="primaryNav">
+        <a href="index.html" class="nav-link">Home</a>
+
+        <!-- Academics Dropdown -->
+        <div class="nav-item-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <span>Academics</span>
+            <svg class="dropdown-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="programs.html" class="dropdown-item">
+              <span class="dropdown-item-title">Academic Programs</span>
+              <span class="dropdown-item-desc">D.Pharm, B.Pharm, M.Pharm, Pharm.D</span>
+            </a>
+            <a href="departments.html" class="dropdown-item">
+              <span class="dropdown-item-title">Pharmacy Departments</span>
+              <span class="dropdown-item-desc">8 Specialized Scientific Disciplines</span>
+            </a>
+            <a href="laboratories.html" class="dropdown-item">
+              <span class="dropdown-item-title">Laboratories &amp; Facilities</span>
+              <span class="dropdown-item-desc">Formulation, Analysis &amp; Research</span>
+            </a>
+            <a href="research.html" class="dropdown-item">
+              <span class="dropdown-item-title">Research &amp; Innovation</span>
+              <span class="dropdown-item-desc">Drug Discovery &amp; Scientific Inquiry</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Campus Life Dropdown -->
+        <div class="nav-item-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <span>Campus Life</span>
+            <svg class="dropdown-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="about.html" class="dropdown-item">
+              <span class="dropdown-item-title">About Our College</span>
+              <span class="dropdown-item-desc">Mission, Vision &amp; Core Values</span>
+            </a>
+            <a href="campus-life.html" class="dropdown-item">
+              <span class="dropdown-item-title">Campus Life &amp; Facilities</span>
+              <span class="dropdown-item-desc">Student Activities, Gallery &amp; Events</span>
+            </a>
+            <a href="placements.html" class="dropdown-item">
+              <span class="dropdown-item-title">Placements &amp; Careers</span>
+              <span class="dropdown-item-desc">Career Horizons &amp; Industry Sectors</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Admissions & Contact Dropdown -->
+        <div class="nav-item-dropdown">
+          <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <span>Admissions</span>
+            <svg class="dropdown-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="admissions.html" class="dropdown-item">
+              <span class="dropdown-item-title">Admissions &amp; Eligibility</span>
+              <span class="dropdown-item-desc">5-Step Process &amp; Science Criteria</span>
+            </a>
+            <a href="contact.html" class="dropdown-item">
+              <span class="dropdown-item-title">Contact Information Desk</span>
+              <span class="dropdown-item-desc">Campus Address, Phone &amp; Hours</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="mobile-only-actions">
+          <a href="admissions.html#enquiry" class="btn btn-primary btn-sm">Apply Now</a>
+        </div>
+      </nav>
+
+      <!-- Header Actions (Clean single CTA button) -->
+      <div class="nav-actions">
+        <a href="admissions.html#enquiry" class="btn btn-primary btn-sm">Apply Now</a>
+      </div>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header Banner -->
+  <section class="page-header-banner">
+    <div class="container page-header-content">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &rsaquo; <span class="current">Campus Life &amp; Facilities</span>
+      </div>
+      <h1 class="page-header-title">Campus Life &amp; Facilities</h1>
+      <p class="page-header-lead">
+        A supportive academic ecosystem combining modern infrastructure, peer learning, scientific workshops, and community health initiatives.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 19: Campus Facilities -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Campus Infrastructure</div>
+        <h2 class="section-title">Explore the Academic Environment</h2>
+        <p class="section-subtitle">
+          Modern infrastructure designed to facilitate focused lectures, quiet study, experimental research, and student collaboration.
+        </p>
+        <span class="demo-disclaimer-pill">Illustrative Demo Content &amp; Facility Overviews</span>
+      </div>
+
+      <div class="labs-grid">
+        <div class="lab-card fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="facility-classrooms.jpeg">
+            <img src="images/facility-classrooms.jpeg" alt="Smart lecture halls and tiered pharmacy classrooms" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Facility Placeholder</div>
+              <div class="placeholder-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect></svg>
+              </div>
+              <div class="placeholder-title">facility-classrooms.jpeg</div>
+              <div class="placeholder-specs">4:3 Landscape • 800 × 600 px</div>
+            </div>
+          </div>
+          <div class="lab-info">
+            <h3>Modern Classrooms</h3>
+            <p>Smart audio-visual enabled lecture theatres equipped with ceiling projectors and ergonomic student seating.</p>
+          </div>
+        </div>
+
+        <div class="lab-card fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="facility-library.jpeg">
+            <img src="images/facility-library.jpeg" alt="College central pharmacy library and journal stacks" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Facility Placeholder</div>
+              <div class="placeholder-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              </div>
+              <div class="placeholder-title">facility-library.jpeg</div>
+              <div class="placeholder-specs">4:3 Landscape • 800 × 600 px</div>
+            </div>
+          </div>
+          <div class="lab-info">
+            <h3>Central Pharmacy Library</h3>
+            <p>Spacious resource center offering extensive volumes of Indian Pharmacopoeia, British Pharmacopoeia, and online science databases.</p>
+          </div>
+        </div>
+
+        <div class="lab-card fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="facility-seminar.jpeg">
+            <img src="images/facility-seminar.jpeg" alt="Air-conditioned college seminar hall and presentation auditorium" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Facility Placeholder</div>
+              <div class="placeholder-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path></svg>
+              </div>
+              <div class="placeholder-title">facility-seminar.jpeg</div>
+              <div class="placeholder-specs">4:3 Landscape • 800 × 600 px</div>
+            </div>
+          </div>
+          <div class="lab-info">
+            <h3>Seminar Hall</h3>
+            <p>Hosts guest lectures, national scientific conferences, student paper presentations, and inter-collegiate pharmacy debates.</p>
+          </div>
+        </div>
+
+        <div class="lab-card fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="facility-computer.jpeg">
+            <img src="images/facility-computer.jpeg" alt="Computer laboratory and digital learning facility" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Facility Placeholder</div>
+              <div class="placeholder-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect></svg>
+              </div>
+              <div class="placeholder-title">facility-computer.jpeg</div>
+              <div class="placeholder-specs">4:3 Landscape • 800 × 600 px</div>
+            </div>
+          </div>
+          <div class="lab-info">
+            <h3>Computer Learning Facilities</h3>
+            <p>Broadband internet terminals equipped for statistical analysis, pharmacology software simulations, and online journals access.</p>
+          </div>
+        </div>
+
+        <div class="lab-card fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="lab-research.jpeg">
+            <img src="images/lab-research.jpeg" alt="Dedicated research workspaces for postgraduate projects" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Facility Placeholder</div>
+              <div class="placeholder-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon></svg>
+              </div>
+              <div class="placeholder-title">lab-research.jpeg</div>
+              <div class="placeholder-specs">4:3 Landscape • 800 × 600 px</div>
+            </div>
+          </div>
+          <div class="lab-info">
+            <h3>Research Learning Spaces</h3>
+            <p>Clean, temperature-regulated environments for advanced instrument trials and student thesis preparations.</p>
+          </div>
+        </div>
+
+        <div class="lab-card fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="facility-sports.jpeg">
+            <img src="images/facility-sports.jpeg" alt="Student recreation lounge and outdoor sporting amenities" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Facility Placeholder</div>
+              <div class="placeholder-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+              </div>
+              <div class="placeholder-title">facility-sports.jpeg</div>
+              <div class="placeholder-specs">4:3 Landscape • 800 × 600 px</div>
+            </div>
+          </div>
+          <div class="lab-info">
+            <h3>Student Recreation &amp; Sports</h3>
+            <p>Indoor games facility (table tennis, chess) and outdoor courts supporting physical wellness and campus camaraderie.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 20: Campus Life Interactive Lightbox Gallery -->
+  <section class="section section-alt" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Visual Gallery</div>
+        <h2 class="section-title">Experience Learning Beyond the Laboratory</h2>
+        <p class="section-subtitle">
+          Click on any photo below to launch the enlarged modal view. (Features Vanilla JS keyboard navigation and full caption details).
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="gallery-activity-1.jpeg">
+            <img src="images/gallery-activity-1.jpeg" alt="Pharmacy Student Activities in Academic Campus" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Campus Visual</div>
+              <div class="placeholder-title">gallery-activity-1.jpeg</div>
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Student Activities</span>
+            <div class="gallery-caption">Pharmacy Student Activities</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="gallery-workshop-2.jpeg">
+            <img src="images/gallery-workshop-2.jpeg" alt="Scientific Workshops on Pharmaceutical Sciences" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Campus Visual</div>
+              <div class="placeholder-title">gallery-workshop-2.jpeg</div>
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Academic Workshops</span>
+            <div class="gallery-caption">Scientific Workshops</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="gallery-seminar-3.jpeg">
+            <img src="images/gallery-seminar-3.jpeg" alt="Pharmaceutical Seminars and Guest Lectures" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Campus Visual</div>
+              <div class="placeholder-title">gallery-seminar-3.jpeg</div>
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Symposia</span>
+            <div class="gallery-caption">Pharmaceutical Seminars</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="gallery-research-4.jpeg">
+            <img src="images/gallery-research-4.jpeg" alt="Research Demonstrations in Pharmaceutical Labs" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Campus Visual</div>
+              <div class="placeholder-title">gallery-research-4.jpeg</div>
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Innovation</span>
+            <div class="gallery-caption">Research Demonstrations</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="gallery-cultural-5.jpeg">
+            <img src="images/gallery-cultural-5.jpeg" alt="Cultural Events and Campus Festivals" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Campus Visual</div>
+              <div class="placeholder-title">gallery-cultural-5.jpeg</div>
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Campus Culture</span>
+            <div class="gallery-caption">Cultural Events</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="gallery-collab-6.jpeg">
+            <img src="images/gallery-collab-6.jpeg" alt="Student Group Collaboration in Library" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Campus Visual</div>
+              <div class="placeholder-title">gallery-collab-6.jpeg</div>
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Collaboration</span>
+            <div class="gallery-caption">Student Collaboration</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="gallery-health-7.jpeg">
+            <img src="images/gallery-health-7.jpeg" alt="Community Healthcare Awareness Activities" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Campus Visual</div>
+              <div class="placeholder-title">gallery-health-7.jpeg</div>
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Public Health</span>
+            <div class="gallery-caption">Healthcare Awareness Activities</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-up">
+          <div class="image-placeholder-container ratio-4-3" data-filename="gallery-campus-8.jpeg">
+            <img src="images/gallery-campus-8.jpeg" alt="Campus Celebrations and Annual Day" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Campus Visual</div>
+              <div class="placeholder-title">gallery-campus-8.jpeg</div>
+            </div>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Celebrations</span>
+            <div class="gallery-caption">Campus Celebrations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 22: Events and Academic Activities -->
+  <section class="section" id="events">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Academic Calendar</div>
+        <h2 class="section-title">Science. Learning. Innovation.</h2>
+        <p class="section-subtitle">
+          Upcoming and recurring academic activities enriching student pharmaceutical insight.
+        </p>
+        <span class="demo-disclaimer-pill">Fictional Demonstration Event Information</span>
+      </div>
+
+      <div class="events-grid">
+        <div class="event-card fade-in-up">
+          <div class="image-placeholder-container ratio-16-9" data-filename="event-workshop.jpeg">
+            <img src="images/event-workshop.jpeg" alt="Pharmacy Education Workshop" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Event Visual</div>
+              <div class="placeholder-title">event-workshop.jpeg</div>
+            </div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-badge">Sample Date: Oct 15, 2026</div>
+            <h3>Pharmacy Education Workshop</h3>
+            <p>Interactive training reviewing modern compounding techniques, dosage formulation precision, and laboratory safety protocols.</p>
+          </div>
+        </div>
+
+        <div class="event-card fade-in-up">
+          <div class="image-placeholder-container ratio-16-9" data-filename="event-symposium.jpeg">
+            <img src="images/event-symposium.jpeg" alt="Pharmaceutical Science Symposium" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Event Visual</div>
+              <div class="placeholder-title">event-symposium.jpeg</div>
+            </div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-badge">Sample Date: Nov 10, 2026</div>
+            <h3>Pharmaceutical Science Symposium</h3>
+            <p>Annual research forum welcoming student presentations on drug delivery innovations, chromatography, and phytochemistry.</p>
+          </div>
+        </div>
+
+        <div class="event-card fade-in-up">
+          <div class="image-placeholder-container ratio-16-9" data-filename="event-seminar.jpeg">
+            <img src="images/event-seminar.jpeg" alt="Drug Discovery Seminar" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Event Visual</div>
+              <div class="placeholder-title">event-seminar.jpeg</div>
+            </div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-badge">Sample Date: Dec 05, 2026</div>
+            <h3>Drug Discovery Seminar</h3>
+            <p>Specialized guest session covering in-silico screening, molecular docking, and modern pharmacological testing models.</p>
+          </div>
+        </div>
+
+        <div class="event-card fade-in-up">
+          <div class="image-placeholder-container ratio-16-9" data-filename="event-awareness.jpeg">
+            <img src="images/event-awareness.jpeg" alt="Healthcare Awareness Program" class="responsive-img" loading="lazy" onerror="this.classList.add('img-fallback-hidden');">
+            <div class="placeholder-fallback">
+              <div class="placeholder-badge">Event Visual</div>
+              <div class="placeholder-title">event-awareness.jpeg</div>
+            </div>
+          </div>
+          <div class="event-body">
+            <div class="event-date-badge">Sample Date: Jan 20, 2027</div>
+            <h3>Healthcare Awareness Program</h3>
+            <p>Community outreach campaign educating local citizens on safe medicine storage, rational antibiotic usage, and hypertension management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 21: Student Testimonials -->
+  <section class="section section-mint">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Student Perspectives</div>
+        <h2 class="section-title">Student Learning Experiences</h2>
+        <p class="section-subtitle">
+          Illustrative feedback demonstrating student engagement across academic departments.
+        </p>
+        <span class="demo-disclaimer-pill">Sample Testimonials – Demonstration Content</span>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in-up">
+          <div class="testimonial-quote-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+          <p>
+            "The practical sessions in pharmaceutics and chemistry gave me a solid grounding in drug formulation techniques and laboratory safety protocols."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar-placeholder">P1</div>
+            <div class="author-info">
+              <h4>Pharmacy Student 01</h4>
+              <div class="author-program">D.Pharm Program</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in-up">
+          <div class="testimonial-quote-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+          <p>
+            "From medicinal chemistry to pharmacology analysis, the coursework balances rigorous theoretical concepts with hands-on instrumental practice."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar-placeholder">P2</div>
+            <div class="author-info">
+              <h4>Pharmacy Student 02</h4>
+              <div class="author-program">B.Pharm Program</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in-up">
+          <div class="testimonial-quote-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+          <p>
+            "The clinical pharmacy modules and pharmacotherapy case evaluations helped me understand patient-centered care and medication monitoring."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar-placeholder">P3</div>
+            <div class="author-info">
+              <h4>Pharmacy Student 03</h4>
+              <div class="author-program">Pharm.D Program</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <div class="brand-icon-box" style="width: 38px; height: 38px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h16a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-2a4 4 0 0 1 4-4z"/><path d="M12 4v6"/><path d="M9 7h6"/></svg>
+            </div>
+            <span style="font-family: var(--font-heading); font-weight: 800; font-size: 1.15rem; color: var(--white);">
+              PHARMACY COLLEGE WEBSITE
+            </span>
+          </div>
+          <p class="footer-brand-desc">
+            A demonstration website designed to showcase modern website architecture for Indian pharmacy colleges and pharmaceutical education institutes.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html">&rsaquo; About Us</a></li>
+            <li><a href="programs.html">&rsaquo; Academic Programs</a></li>
+            <li><a href="departments.html">&rsaquo; Departments</a></li>
+            <li><a href="admissions.html">&rsaquo; Admissions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Campus &amp; Research</h4>
+          <ul class="footer-links-list">
+            <li><a href="laboratories.html">&rsaquo; Laboratories</a></li>
+            <li><a href="research.html">&rsaquo; Research &amp; Innovation</a></li>
+            <li><a href="placements.html">&rsaquo; Placements</a></li>
+            <li><a href="campus-life.html">&rsaquo; Campus Life</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Information</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Phone: 0000000000</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Email: demo@example.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-box">
+        <strong>Demo Website Disclaimer:</strong> This is a fictional educational website demonstration. All institutional details, academic programs, faculty profiles, statistics, student testimonials, laboratory facilities, research information, and placement details are illustrative and do not represent an actual educational institution.
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Pharmacy College Website. Demo Website – All Rights Reserved.</div>
+        <div>Designed for Hostinger Static Hosting | HTML5 • CSS3 • Vanilla JavaScript</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal Container for Gallery Images -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Campus Life Image Lightbox">
+    <div class="lightbox-content-box">
+      <button id="lightboxClose" class="lightbox-close-btn" aria-label="Close Preview">&times;</button>
+      <button id="lightboxPrev" class="lightbox-nav-btn lightbox-prev-btn" aria-label="Previous Image">&lsaquo;</button>
+      <button id="lightboxNext" class="lightbox-nav-btn lightbox-next-btn" aria-label="Next Image">&rsaquo;</button>
+      <div class="lightbox-img-wrap">
+        <img id="lightboxImg" src="images/gallery-activity-1.jpeg" alt="Enlarged Campus Preview">
+      </div>
+      <div class="lightbox-caption-bar">
+        <div>
+          <div id="lightboxCategory" class="gallery-tag">Category</div>
+          <div id="lightboxTitle" class="lightbox-title">Image Title</div>
+        </div>
+        <div style="font-size: 0.78rem; color: var(--muted-text);">Illustrative Demonstration Image</div>
+      </div>
+    </div>
+  </div>
+
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
